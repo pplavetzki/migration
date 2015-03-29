@@ -3,6 +3,7 @@
  */
 var Switch = (function () {
     function Switch() {
+        this.meta = { ipAddress: '', hostname: '', model: '' };
     }
     return Switch;
 })();

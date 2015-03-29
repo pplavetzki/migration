@@ -41,9 +41,9 @@ class WholeFileProvider implements iprocess.IProcess{
             var regEx:RegExp = /interface ([\s\S]*?)(?=!)/g;
             var interfaceMatches;
 
-            myData.ipAddress = util.getIPAddress(data);
-            myData.hostname = util.getHostname(data);
-            myData.model = util.getModel(data);
+            myData.meta.ipAddress = util.getIPAddress(data);
+            myData.meta.hostname = util.getHostname(data);
+            myData.meta.model = util.getModel(data);
             myData.interfaces = [];
 
             var fastEther:string;
